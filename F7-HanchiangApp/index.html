@@ -23,7 +23,7 @@
     <meta name="msapplication-tap-highlight" content="no" />
 
     <!-- Your app title -->
-    <title>My App</title>
+    <title>Hanchiang App</title>
 
     <!-- This template defaults to the iOS CSS theme. To support both iOS and material design themes, see the Framework7 Tutorial at the link below:
         http://www.idangero.us/framework7/tutorials/maintain-both-ios-and-material-themes-in-single-app.html
@@ -36,6 +36,7 @@
     />
 
     <link rel="stylesheet" href="css/styles.css" />
+    <script type="text/javascript" src="wpapi/wpapi.min.js"></script>
   </head>
 
   <body>
@@ -48,11 +49,23 @@
     <div class="panel panel-left panel-reveal">
       <div class="content-block">
         <p>Left panel content goes here</p>
-        <p> <a class="close-panel" id="id-about" href="about.html">About app</a></p>
-        <p><a class="close-panel" href="test.html">Test</a></p>
+        <p><a class="close-panel" id="id-home" href="index.html">Home</a></p>
+        <p>
+          <a class="close-panel" id="id-timetable" href="timetable.html"
+            >Timetable</a
+          >
+        </p>
+        <p>
+          <a class="close-panel" id="id-calendar" href="calendar.html"
+            >Calendar</a
+          >
+        </p>
+        <p>
+          <a class="close-panel" id="id-result" href="result.html">Result</a>
+        </p>
+        <p><a class="close-panel" id="id-news" href="news.html">News</a></p>
+
         <p><a class="close-panel" href="#">Close</a></p>
-        
-    </div>
       </div>
     </div>
 
@@ -64,7 +77,7 @@
         <div class="navbar">
           <div class="navbar-inner">
             <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
-            <div class="center sliding">Awesome App</div>
+            <div class="center sliding">Hanchiang App</div>
             <div class="right">
               <!--
                           Right link contains only icon - additional "icon-only" class
@@ -82,10 +95,10 @@
           <div data-page="index" class="page">
             <!-- Scrollable page content -->
             <div class="page-content">
-              <div class="content-block">
+              <div id="id-home-content" class="content-block">
                 <p>Page content goes here</p>
                 <!-- Link to another page -->
-                <a href="about.html">About app</a>
+                <a href="news.html">News</a>
               </div>
             </div>
           </div>
@@ -94,7 +107,7 @@
         <div class="toolbar">
           <div class="toolbar-inner">
             <!-- Toolbar links -->
-            <a  href="about.html" class="link">About</a>
+            <a href="#" class="link">About</a>
             <a href="#" class="link">Link 2</a>
           </div>
         </div>
@@ -106,6 +119,7 @@
       type="text/javascript"
       src="lib/framework7/js/framework7.min.js"
     ></script>
+
     <script type="text/javascript" src="js/my-app.js"></script>
   </body>
 </html>
